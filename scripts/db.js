@@ -43,6 +43,6 @@ const storeUsersCreate = query('CREATE TABLE `storeUsers` (\n' +
 	') ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;\n'
 );
 
-Promise.all([usersCreate, storesCreate]).then(() => {
+Promise.all([usersCreate, storesCreate, storeUsersCreate]).then(() => {
 	connection.end();
 });
